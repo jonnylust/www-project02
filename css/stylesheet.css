@@ -3,11 +3,46 @@
 	border-radius:0;
 	position: fixed;
 	width: 100%;
+	opacity: 0.8;
 }
 
 .jumbotron {
   background: url("../img/wall2.png") no-repeat;
-  min-height: 500px;
+  min-height: 600px;
   background-size: cover;
   background-attachment: fixed;
+	margin-bottom:0;
+	opacity: 1;
+}
+
+.jumbotron h1{
+  color: #fff;
+	margin-top: 150px;
+	font-size: 80px;
+	opacity: 0.9;
+}
+
+.jumbotron p{
+  color: #fff;
+	font-size: 20px;
+	opacity: 0.9;
+}
+
+.test{
+	background-color: blue;
+}
+
+.test2{
+	background-color: red;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+		width: auto;
+	  height: 500px;
+	  max-height: 500px;
+}
+
+.carousel-indicators li {
+	border-radius: 0;
 }

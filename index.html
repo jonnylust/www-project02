@@ -36,20 +36,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
+						<li><a href="#">Priser <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Om <span class="sr-only">(current)</span></a></li>
+						<li><a id="contact" href="#">Kontakt <span class="sr-only">(current)</span></a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -106,21 +95,16 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-		</div>
 
-		<div class="container test">
-			<p>
-				Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
-				Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
-				Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
-				Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
-			</p>
+				<hr>
+
 		</div>
 
 		<!-- Grids -->
-		<div id="goHere" class="container test2">
+		<div id="goHere" class="container">
 			<div class="row">
 				<div class="col-md-8 col-sm-8 col-xs-8">
+					<h3>Om</h3>
 					<p>
 						Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
 						Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf.
@@ -130,9 +114,11 @@
 				</div>
 
 				<div class="col-md-4 col-sm-4 col-xs-4">
-					<p>Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf</p>
+					<img class="img-responsive center-block" src="img/img_05.png" alt="Peo">
 				</div>
 			</div>
+
+			<hr>
 
 			<br>
 
@@ -170,8 +156,59 @@
 					<p>Lorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdfLorem ipsum asdf</p>
 				</div>
 			</div>
+
+			<hr>
+
 		</div>
 
+
+
+
+		<div class="container test">
+			<div class="list-group text-center">
+				<h2 class="list-group-item active">Priser</h2>
+				<p class="list-group-item"><strong>Nötlåda 5kg 1000:-</strong></p>
+				<p class="list-group-item"><strong>Viltlåda 5kg 1500:-</strong></p>
+				<p class="list-group-item"><strong>Lammlåda 5kg 1500:-</strong></p>
+				<p class="list-group-item"><strong>Färs vilt 5kg 500:-</strong></p>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="goHere2" class="container test">
+			<h2>Kontakt</h2>
+			<form>
+				<div class="form-group">
+					<label>Namn</label>
+					<input type="text" class="form-control" placeholder="Ange namn">
+				</div>
+
+				<div class="form-group">
+					<label>E-post</label>
+					<input type="email" class="form-control" placeholder="Ange e-post">
+				</div>
+
+				<div class="form-group">
+					<label>Meddelande</label>
+					<textarea class="form-control" placeholder="Lägg till meddelande"></textarea>
+				</div>
+
+				<button type="submit" class="btn btn-default">Skicka</button>
+
+			</form>
+
+		</div>
+
+		<br>
+
+		<footer class="container-fluid bg-4 text-center">
+			<ul class="list-inline">
+  			<li><img src="img/facebook.png" alt="Facebook"></li>
+				<li><img src="img/instagram.png" alt="Instagram"></li>
+				<li><img src="img/gmail.png" alt="Gmail"></li>
+			</ul>
+		</footer>
 
 		<!-- Bootstrap core JavaScript
 		================================================== -->
@@ -183,6 +220,7 @@
 
 		<script>
 			var target = $('.jumbotron');
+			var target2 = $('.navbar');
 			var targetHeight = target.outerHeight();
 
 			$(document).scroll(function (e) {
@@ -191,12 +229,19 @@
 
 			    if (scrollPercent >= 0) {
 			        target.css('opacity', 0 + scrollPercent);
+							target2.css('opacity', 0 + scrollPercent);
 			    }
 			});
 
 			$("#testBtn").click(function() {
 				$('html, body').animate({
 					scrollTop: $("#goHere").offset().top
+				}, 2000);
+			});
+
+			$("#contact").click(function() {
+				$('html, body').animate({
+					scrollTop: $("#goHere2").offset().top
 				}, 2000);
 			});
 

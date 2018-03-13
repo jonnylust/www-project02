@@ -1,0 +1,13 @@
+.navbar{
+	margin-bottom:0;
+	border-radius:0;
+	position: fixed;
+	width: 100%;
+}
+
+.jumbotron {
+  background: url("../img/wall2.png") no-repeat;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}

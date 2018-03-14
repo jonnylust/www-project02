@@ -3,9 +3,17 @@
 	border-radius:0;
 	position: fixed;
 	width: 100%;
-	opacity: 0.8;
+	opacity: 1;
 	z-index: 2;
 }
+
+h1, h2, h3 {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+p, a {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
 
 .jumbotron {
   background: url("../img/wall2.png") no-repeat;
@@ -29,22 +37,8 @@
 	opacity: 0.9;
 }
 
-.test{
-	background-color: #eaeaea;
-}
-
-.bg-4 {
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
-
 .carousel {
     z-index: 1;
-}
-
-.col-md-4 > img {
-	width: auto;
-	height: 350px;
 }
 
 .carousel-inner > .item > img {
@@ -56,4 +50,46 @@
 
 .carousel-indicators li {
 	border-radius: 0;
+}
+
+.bg-color-divider {
+	background-color: #f2f2f2;
+}
+
+.pricelist-bg-color {
+	background-color: #0099ff;
+}
+
+.pricelist-bg-color p {
+	color: #fff;
+}
+
+.table-striped{
+	background-color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #99d6ff;
+ }
+
+.pricelist-padding {
+	padding-top: 20px;
+	padding border-bottom: 20px;
+	background-color: #0099ff;
+}
+
+
+.list-inline {
+	margin-top: 10px;
+}
+
+.bg-4 {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.col-md-6 > img {
+	width: auto;
+	height: 350px;
 }

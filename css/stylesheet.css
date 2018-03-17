@@ -1,10 +1,6 @@
-.navbar{
-	margin-bottom:0;
-	border-radius:0;
-	position: fixed;
-	width: 100%;
-	opacity: 1;
-	z-index: 2;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3 {
@@ -14,6 +10,14 @@ p, a {
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
+.navbar{
+	margin-bottom:0;
+	border-radius:0;
+	position: fixed;
+	width: 100%;
+	opacity: 1;
+	z-index: 2;
+}
 
 .jumbotron {
   background: url("../img/wall2.png") no-repeat;
@@ -78,7 +82,6 @@ p, a {
 	padding border-bottom: 20px;
 	background-color: #0099ff;
 }
-
 
 .list-inline {
 	margin-top: 10px;
